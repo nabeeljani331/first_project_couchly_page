@@ -12,355 +12,47 @@
   <link rel="stylesheet" href="couchly-page.css">
   <title>couchly-codezeel.myshopify.com</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
-
-      
-      
-  <!-- CSS -->
-<!-- <style>
-/* Google Fonts - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
-
-.slide-container{
-max-width: 1120px;
-width: 100%;
-padding: 40px 0;
-}
-.slide-content{
-margin: 0 40px;
-overflow: hidden;
-border-radius: 25px;
-}
-.card{
-border-radius: 25px;
-background-color: #FFF;
-}
-.image-content,
-.card-content{
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 10px 14px;
-}
-.image-content{
-position: relative;
-row-gap: 5px;
-padding: 25px 0;
-}
-.overlay{
-position: absolute;
-left: 0;
-top: 0;
-height: 100%;
-width: 100%;
-background-color: #4070F4;
-border-radius: 25px 25px 0 25px;
-}
-.overlay::before,
-.overlay::after{
-content: '';
-position: absolute;
-right: 0;
-bottom: -40px;
-height: 40px;
-width: 40px;
-background-color: #4070F4;
-}
-.overlay::after{
-border-radius: 0 25px 0 0;
-background-color: #FFF;
-}
-.card-image{
-position: relative;
-height: 150px;
-width: 150px;
-border-radius: 50%;
-background: #FFF;
-padding: 3px;
-}
-.card-image .card-img{
-height: 100%;
-width: 100%;
-object-fit: cover;
-border-radius: 50%;
-border: 4px solid #4070F4;
-}
-.name{
-font-size: 18px;
-font-weight: 500;
-color: #333;
-}
-.description{
-font-size: 14px;
-color: #707070;
-text-align: center;
-}
-.button{
-border: none;
-font-size: 16px;
-color: #FFF;
-padding: 8px 16px;
-background-color: #4070F4;
-border-radius: 6px;
-margin: 14px;
-cursor: pointer;
-transition: all 0.3s ease;
-}
-.button:hover{
-background: #265DF2;
-}
-
-.swiper-navBtn{
-color: #6E93f7;
-transition: color 0.3s ease;
-}
-.swiper-navBtn:hover{
-color: #4070F4;
-}
-.swiper-navBtn::before,
-.swiper-navBtn::after{
-font-size: 35px;
-}
-.swiper-button-next{
-right: 0;
-}
-.swiper-button-prev{
-left: 0;
-}
-.swiper-pagination-bullet{
-background-color: #6E93f7;
-opacity: 1;
-}
-.swiper-pagination-bullet-active{
-background-color: #4070F4;
-}
-
-@media screen and (max-width: 768px) {
-.slide-content{
-margin: 0 10px;
-}
-.swiper-navBtn{
-display: none;
-}
-}
-</style> -->
-<style>
-  /* Google Fonts - Poppins */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
-  .slide-container {
-      max-width: 1120px;
-      width: 100%;
-      padding: 40px 0;
-  }
-  .slide-content {
-      margin: 0 40px;
-      overflow: hidden;
-      border-radius: 25px;
-  }
-  .card {
-      border-radius: 25px;
-      background-color: #FFF;
-  }
-  .image-content,
-  .card-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 10px 14px;
-  }
-  .image-content {
-      position: relative;
-      row-gap: 5px;
-      padding: 25px 0;
-  }
-  .overlay {
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      background-color: #4070F4;
-      border-radius: 25px 25px 0 25px;
-  }
-  .overlay::before,
-  .overlay::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      bottom: -40px;
-      height: 40px;
-      width: 40px;
-      background-color: #4070F4;
-  }
-  .overlay::after {
-      border-radius: 0 25px 0 0;
-      background-color: #FFF;
-  }
-  .card-image {
-      position: relative;
-      height: 150px;
-      width: 150px;
-      border-radius: 50%;
-      background: #FFF;
-      padding: 3px;
-  }
-  .card-image .card-img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #4070F4;
-  }
-  .name {
-      font-size: 18px;
-      font-weight: 500;
-      color: #333;
-  }
-  .description {
-      font-size: 14px;
-      color: #707070;
-      text-align: center;
-  }
-  .button {
-      border: none;
-      font-size: 16px;
-      color: #FFF;
-      padding: 8px 16px;
-      background-color:  #265DF2;
-      border-radius: 6px;
-      margin: 14px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-  }
-  .button:hover {
-      background: #265DF2;
-  }
-  .swiper-navBtn {
-      color: #080808;
-      transition: color 0.3s ease;
-  }
-  .swiper-navBtn:hover {
-      color: #060606;
-  }
-  .swiper-navBtn::before,
-  .swiper-navBtn::after {
-      font-size: 35px;
-  }
-  .swiper-button-next {
-      right: 0;
-  }
-  .swiper-button-prev {
-      left: 0;
-  }
-  .swiper-pagination-bullet {
-      background-color: #6E93f7;
-      opacity: 1;
-  }
-  .swiper-pagination-bullet-active {
-      background-color: #4070F4;
-  }
-  @media screen and (max-width: 768px) {
-      .slide-content {
-          margin: 0 10px;
-      }
-      .swiper-navBtn {
-          display: none;
-      }
-
-  }
-  /* Ensure the swiper buttons and pagination are properly styled within the new container */
-
-.swiper-navBtn::before, .swiper-navBtn::after {
-  font-size: 20px;
-
-}
-
-</style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+  <!-- ------------------div1 -->
   <!-- we ship nationwide. -->
   <div id="div-1"> We ship nationwide. 30-day return policy. Free standard shipping on orders over $75.</div>
 <!-- call us free  -->
-    <!-- <nav class="navbar navbar-expand bg-body-tertiary ">
-      <div class="container-fluid   text-center  border border-top-0 ">
-        <div class="lift-div">
-          <span class="navbar-text active">
-            Call Us Free 24/7 : (+91) 012-345-6789
-          </span>
-        </div>
-
-        <div class="collapse navbar-collapse " id="navbarText" style="display: block; max-width: 800px; display:flax;">
-          <ul class="navbar-nav ms-auto text-end">
-            <li class="nav-item    text-center  border border-top-0   ">
+ <!-- -------------------------div2 -->
+ <div class="main-div-nav1">
+  <div class="lift-div2-nav" >
+    <span class="navbar-text active" style="margin-right: auto; margin-left: auto;">
+      Call Us Free 24/7 : (+91) 012-345-6789
+    </span>
+  </div>
+  <nav class="navbar navbar-expand bg-body-tertiary " >
+    <div class="container-fluid">
+      <div class="right-div2-nav">
+        <div class="collapse navbar-collapse" id="navbarText" >
+          <ul class="navbar-nav mx-auto text-start">
+            <li class="nav-item text-center  border border-top-0 border-bottom-0  border-left-0">
               <a class="nav-link active" aria-current="page" href="#">Today's Deal</a>
             </li>
-
-            <li class="nav-item  text-center  border border-top-0">
+            <li class="nav-item text-center  border border-top-0 border-bottom-0  border-left-0">
               <a class="nav-link active" href="#">Contact Us</a>
             </li>
-
-            <li class="nav-item dropdown active   text-center  border border-top-0">
-              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                EUR €
-              </a>
-              <ul class="dropdown-menu   text-center  border border-top-0">
-                <li><a class="dropdown-item" href="#"> Canada (CAD $) </a></li>
-                <li><a class="dropdown-item" href="#"> France (EUR €)</a></li>
-                <li><a class="dropdown-item" href="#">United States (USD $)</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown active   text-center  border border-top-0">
-              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                English
-              </a>
-              <ul class="dropdown-menu   text-center  border border-top-0 ">
-                <li><a class="dropdown-item" href="#">English</a></li>
-                <li><a class="dropdown-item" href="#">Français</a></li>
-                <li><a class="dropdown-item" href="#">Español</a></li>
-                <li><a class="dropdown-item" href="#"> Nederlands</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-
-
-
-    <nav class="navbar navbar-expand bg-body-tertiary">
-      <div class="container-fluid text-center border border-top-0">
-        <div class="lift-div">
-          <span class="navbar-text active">
-            Call Us Free 24/7 : (+91) 012-345-6789
-          </span>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ms-auto text-end">
-            <li class="nav-item text-center border border-top-0">
-              <a class="nav-link active" aria-current="page" href="#">Today's Deal</a>
-            </li>
-            <li class="nav-item text-center border border-top-0">
-              <a class="nav-link active" href="#">Contact Us</a>
-            </li>
-            <li class="nav-item dropdown active text-center border border-top-0">
+            <li class="nav-item dropdown active text-center  border border-top-0 border-bottom-0  border-left-0">
               <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 EUR €
               </a>
-              <ul class="dropdown-menu text-center border border-top-0">
+              <ul class="dropdown-menu text-center  border border-top-0 border-bottom-0  border-left-0">
                 <li><a class="dropdown-item" href="#">Canada (CAD $)</a></li>
                 <li><a class="dropdown-item" href="#">France (EUR €)</a></li>
                 <li><a class="dropdown-item" href="#">United States (USD $)</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown active text-center border border-top-0">
+            <li class="nav-item dropdown active text-center  border border-top-0 border-bottom-0  border-left-0">
               <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 English
               </a>
-              <ul class="dropdown-menu text-center border border-top-0">
+              <ul class="dropdown-menu text-center  border border-top-0 border-bottom-0  border-left-0">
                 <li><a class="dropdown-item" href="#">English</a></li>
                 <li><a class="dropdown-item" href="#">Français</a></li>
                 <li><a class="dropdown-item" href="#">Español</a></li>
@@ -370,32 +62,42 @@ display: none;
           </ul>
         </div>
       </div>
-    </nav>
-    
+    </div>
+  </nav>
+
+</div>
+   
+<!-- --------------------3 -->
   
-  <nav class="navbar bg-body-tertiary">
+  <nav class="navbar bg-body-tertiary" >
     <div class="container d-flex align-items-center justify-content-between ">
       <a class="navbar-brand" href="#">
-        <img style="display: block;transition: background-color 300ms;"
-          src="https://couchly-codezeel.myshopify.com/cdn/shop/files/logo_210x.png?v=1711455032">
+        <img style="display: block;transition: background-color 300ms; width: 170px;"
+          src="https://couchly-codezeel.myshopify.com/cdn/shop/files/logo_210x.png?v=1711455032" class="left-img-navbar">
+          
       </a>
-      <form class="d-flex" role="search">
-        <input class="form-control me-0  "
-          style="margin-left: 50px; width: 500px; border-radius: 50px;  border-top-right-radius: 0px;  border-bottom-right-radius: 0px;"
-          type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-success"
-          style="width: 100px; border-radius: 50px; border-top-left-radius: 0px;  border-bottom-left-radius: 0px; "
+      <form class="d-flex" role="search" >
+        <input class="form-control me-0  "id="input-search"
+          style=""
+          type="search" placeholder="Search Here..." aria-label="Search">
+        <button class="btn btn-success" id="input-button" 
+          style=" "
           type="submit">Search</button>
       </form>
       <div class="d-flex align-items-center">
+        <div class="icon1-div">
         <svg version="1.1" class="icon icon-account" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="width: 30px;">
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="width: 25px;">
+          
           <g>
+            
             <g>
               <path
                 d="M256,288.4c-153.8,0-238.6,72.8-238.6,204.9c0,10.3,8.4,18.7,18.7,18.7h439.7c10.3,0,18.7-8.4,18.7-18.7
                   C494.6,361.2,409.8,288.4,256,288.4z M55.5,474.6c7.3-98.8,74.7-148.9,200.5-148.9s193.2,50.1,200.5,148.9H55.5z">
+                  
               </path>
+              
             </g>
           </g>
           <g>
@@ -406,19 +108,31 @@ display: none;
               </path>
             </g>
           </g>
+          
         </svg>
-        <svg id="Layer_1" class="icon icon-cmheart" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 29.99 25.43" style="width: 30px;">
-          <defs>
-          </defs>
-          <g id="Layer_54" data-name="Layer 54">
-            <path class="cls-2"
-              d="M16,28.72a3,3,0,0,1-2.13-.88L3.57,17.54a8.73,8.73,0,0,1-2.52-6.25,8.06,8.06,0,0,1,8.12-8h0A8.06,8.06,0,0,1,15,5.68l1,1,.82-.82h0a8.38,8.38,0,0,1,11-.89,8.25,8.25,0,0,1,1.5,11.57,7.36,7.36,0,0,1-.69.79L18.13,27.84A3,3,0,0,1,16,28.72ZM9.15,5.28A6.14,6.14,0,0,0,4.89,7a6,6,0,0,0-1.84,4.33,6.69,6.69,0,0,0,2,4.8l10.3,10.3a1,1,0,0,0,1.41,0h0L27.23,15.91a6.27,6.27,0,0,0-.66-9.35,6.37,6.37,0,0,0-8.37.71L16.71,8.8a1,1,0,0,1-1.41,0h0l-1.7-1.7a6.3,6.3,0,0,0-4.4-1.82Z"
-              transform="translate(-1.05 -3.29)"></path>
-          </g>
-        </svg>
+      </div>
 
-        <svg class="icon icon-compare" version="1.0" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
+
+      <div class="icon2-div">
+        <svg id="Layer_1" class="icon icon-cmheart" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 29.99 25.43" style="width: 25px;">
+            <defs>
+            </defs>
+            <g id="Layer_54" data-name="Layer 54">
+                <path class="cls-2"
+                    d="M16,28.72a3,3,0,0,1-2.13-.88L3.57,17.54a8.73,8.73,0,0,1-2.52-6.25,8.06,8.06,0,0,1,8.12-8h0A8.06,8.06,0,0,1,15,5.68l1,1,.82-.82h0a8.38,8.38,0,0,1,11-.89,8.25,8.25,0,0,1,1.5,11.57,7.36,7.36,0,0,1-.69.79L18.13,27.84A3,3,0,0,1,16,28.72ZM9.15,5.28A6.14,6.14,0,0,0,4.89,7a6,6,0,0,0-1.84,4.33,6.69,6.69,0,0,0,2,4.8l10.3,10.3a1,1,0,0,0,1.41,0h0L27.23,15.91a6.27,6.27,0,0,0-.66-9.35,6.37,6.37,0,0,0-8.37.71L16.71,8.8a1,1,0,0,1-1.41,0h0l-1.7-1.7a6.3,6.3,0,0,0-4.4-1.82Z"
+                    transform="translate(-1.05 -3.29)"></path>
+            </g>
+        </svg>
+        <span class="icon-1 position-absolute top-0 badge rounded-pill bg-danger">
+            0
+            <span class="visually-hidden">unread messages</span>
+        </span>
+    </div>
+    
+      <div class="icon3-div">
+       
+        <svg class="icon icon-compare" version="1.0" xmlns="http://www.w3.org/2000/svg" width="25px" height="30px"
           viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
 
           <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
@@ -440,8 +154,14 @@ display: none;
                 -400 427 -441 449 -15 8 -49 14 -77 14 -42 0 -56 -5 -98 -39z"></path>
           </g>
         </svg>
-
-        <svg id="Layer_1" class="icon-cart" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" style="width: 30px;"
+        <span class="icon-1 position-absolute top-0  badge rounded-pill bg-danger" >
+          0
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </div>
+      <div class="icon4-div">
+       
+        <svg id="Layer_1" class="icon-cart" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" style="width: 25px;"
           viewBox="0 0 423 376.06">
           <defs></defs>
           <path class="cls-1"
@@ -454,14 +174,28 @@ display: none;
             d="M329.71,278l-1.89.19a48.39,48.39,0,0,0-10.4,2.26,47,47,0,0,0-31,36.45,40,40,0,0,0-.61,7.9c0,1.87.07,3.86.16,4.7a47.06,47.06,0,0,0,41.46,41.89,62.63,62.63,0,0,0,10.43,0,53.4,53.4,0,0,0,6.4-1.19,47,47,0,0,0,35-40.7,70.21,70.21,0,0,0,0-9.4A47,47,0,0,0,338,278.19C336.4,278,330.84,277.85,329.71,278ZM337,293.81a30,30,0,0,1,5.37,1.28,30.44,30.44,0,0,1,12.41,7.7,31,31,0,0,1,8.85,18.11,37.13,37.13,0,0,1,.16,3.85,28.69,28.69,0,0,1-1.51,9.76,30.61,30.61,0,0,1-7.5,12.2,31,31,0,0,1-18.33,9.06,47,47,0,0,1-7.69,0,31.66,31.66,0,0,1-15.62-6.59,34.24,34.24,0,0,1-6.38-6.88,31.26,31.26,0,0,1,22.86-48.66,45.45,45.45,0,0,1,7.38.17Z">
           </path>
         </svg>
+        <span class="icon-1 position-absolute top-0  badge rounded-pill bg-danger">
+          0
+          <span class="visually-hidden">unread messages</span>
+        </span>
       </div>
     </div>
+    </div>
   </nav>
-  <!-- -----------navbar---------- -->
+
+  <!-- -----------navbar----------4 -->
+  
+
+
+
+
+
+
+
   <nav class="navbar navbar-expand-lg    " style="background-color: #da8d46;">
     <div class="container-fluid">
-      <div class="dropdown" style="width: 200px;left: 40PX; background-color: #da8d46;">
-        <a class="btn" style="border: 0px solid #d6975c; color: aliceblue;" href="#" role="button"
+      <div class="dropdown" style="width: 200px;left: 40PX; background-color: #c5660c;">
+        <a class="btn" style="border: 0px solid #d6975c;  color: aliceblue;height: 100%;" href="#" role="button"
           data-bs-toggle="dropdown" aria-expanded="false">
           <svg style="width: 20px; height:16px;" fill="currentColor" stroke="currentColor"
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -473,7 +207,8 @@ display: none;
           <svg id="Layer_1" style="width: 15px; height: 10px; padding-left: 5px;" data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980.03 509.6">
             <path
-              d="M968.32,11.25a40.84,40.84,0,0,0-56.3,0l-422,406-422.1-406a40.83,40.83,0,0,0-56.29,0,37.27,37.27,0,0,0,0,54.1l450.2,433a40.84,40.84,0,0,0,56.3,0l450.2-433A37.11,37.11,0,0,0,968.32,11.25Z">
+              d="M968.32,11.25a40.84,40.84,0,0,0-56.3,0l-422,406-422.1-406a40.83,40.83,0,0,0-56.29,0,37.27,37.27,0,0,0,0,54.1l450.2,433a40.84,40.84,0,0,0,56.3,0l450.2-433A37.11,37.11,0,0,0,968.32,11.25Z"
+              fill="#FFFFFF">
             </path>
           </svg>
         </a>
@@ -491,30 +226,30 @@ display: none;
       <div class="bar">
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item2">
               <a class="nav-link" aria-current="page" style="color: aliceblue;" href="#">Home</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item2 dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                 style="color: aliceblue;">
                 Dropdown link
               </a>
               <ul class="dropdown-menu" style="background-color: #da8d46; color: aliceblue;">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item2" href="#">Action</a></li>
+                <li><a class="dropdown-item2" href="#">Another action</a></li>
+                <li><a class="dropdown-item2" href="#">Something else here</a></li>
               </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item3">
               <a class="nav-link" href="#" style="color: aliceblue;">Features</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item2">
               <a class="nav-link" href="#" style="color: aliceblue;">Features</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item2">
               <a class="nav-link" href="#" style="color: aliceblue;">Features</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item2">
               <a class="nav-link" href="#" style="color: aliceblue;">Pricing</a>
             </li>
           </ul>
@@ -522,22 +257,22 @@ display: none;
       </div>
     </div>
   </nav>
-
+<!-- --------------------------5 -->
 
 
   
   <div id="carouselExampleDark" class="carousel carousel-dark slide"
-    style="width: 90%; margin: 30px; margin-top: 60px; margin-left: 70px;">
+    style="width: 95%; margin: 30px; ">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
+      <div class="carousel-item active" data-bs-interval="1000">
         <img src="https://couchly-codezeel.myshopify.com/cdn/shop/files/main-banner-1_1_1200x550.jpg?v=1711962751;"
           class="d-block w-100" alt="...">
-        <div class="carousel-caption text-end">
+        <div class="carousel-caption text-start">
           <p style="font-family: Georgia, serif; font-size: 20px;">Top Trending Products</p>
           <h1 style="font-family: Georgia, serif; font-size: 50px;">Simple &amp; Stylish</h1>
           <h1 style="font-family: Georgia, serif; font-size: 50px;">Vanity Table</h1>
@@ -547,10 +282,10 @@ display: none;
       <div class="carousel-item" data-bs-interval="2000">
         <img src="https://couchly-codezeel.myshopify.com/cdn/shop/files/main-banner-2_1_1200x550.jpg?v=1711962751;"
           class="d-block w-100" alt="...">
-        <div class="carousel-caption text-end">
+        <div class="carousel-caption text-start">
           <p style="font-family: Georgia, serif; font-size: 20px;">Top Trending Products</p>
           <h1 style="font-family: Georgia, serif; font-size: 50px;">Leisure Triangle</h1>
-          <h1 style="font-family: Georgia, serif; font-size: 50px;">Shell Chair</h1>
+          <h1 style="font-family: Georgia, serif; font-size: 50x;">Shell Chair</h1>
           <button class="shop-now">Shop Now</button>
         </div>
       </div>
@@ -560,71 +295,261 @@ display: none;
       <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-      <span class="carousel-control-next-" aria-hidden="true"></span>
+      <span class="carousel-control-next" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
 
 
-  
+  <!-- --------------------------6 -->
 
 <div id="main-div">
   <div id="div1"  style="display: flex; justify-content: space-between;">
     <div id="lift-main">
      <div id="div1-left"><img src="c:\Users\Hp\OneDrive\Desktop\services-1_56x.png" alt="" ></div>
     </div>
+    <div id="right-main">
   <div id="div1-right">Free Shipping</div>
+  <div id="div2-right">Shipping Order $100</div>
+</div>
 </div>
   <div id="div2"  style="display: flex; justify-content: space-between;"> 
     <div id="lift-main">
     <div id="div1-left"><img src="c:\Users\Hp\OneDrive\Desktop\services-2_56x.png"alt=""></div>
   </div>
+   <div id="right-main">
   <div id="div1-right">30 Days Return</div>
+  <div id="div2-right">Exchange Product</div>
+</div>
 </div>
   <div id="div3" style="display: flex; justify-content: space-between;"> 
     <div id="lift-main">
     <div id="div1-left"><img src="c:\Users\Hp\OneDrive\Desktop\services-3_56x.png" alt=""></div>
   </div>
+  <div id="right-main">
   <div id="div1-right">Secured Payment</div>
+  <div id="div2-right">Payment  Accepted</div>
 </div> 
-
+</div> 
   <div id="div4" style="display: flex; justify-content: space-between;"> 
     <div id="lift-main">
     <div id="div1-left"> <img src="c:\Users\Hp\OneDrive\Desktop\services-4_56x.png" alt=""> </div>
   </div>
+  <div id="right-main">
   <div id="div1-right">Special Gifts</div>
+  <div id="div2-right">Contact us Anytime</div>
 </div>
 </div>
-
-
-
-
-<div id="main-div2">
-<div class="main2-div1">
-Shipping Order $100
-</div>
-<div class="main2-div2">
-Exchange Product
-</div>
-<div class="main2-div3">
-Payment Accepted
 </div>
 
-  <div id="main5-right" class="container swiper" >
-        
-    <div class="swiper-button-next swiper-navBtn" style="background-color: #707070;border-radius: 60px;"></div>
+
+<!-- -------------7------------ -->
+<div id="main7-div">
+  <div id="main7-left">
+<div class="main7-div1">
+  Latest Item
+</div>
+<div class="main7-div2">
+  Popular Item
+</div>
+<div class="main7-div3">
+  Best Seller
+</div>
+</div>
+  <div id="main7-right" class="container swiper" >
+       <div class="main7-div4" style="width: 10%;"> 
+    <div class="swiper-button-next swiper-navBtn"  style="background-color: #928e8e;border-radius: 60px;"></div>
     <div class="swiper-button-prev swiper-navBtn"></div>
     <div class="swiper"></div>
   </div>
 </div>
+</div>
 
 
 
+<!-- --------------8------------ -->
+
+<div class="slide-container">
+  <div class="swiper-container ">
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+           <!-- ------img1----- -->
+          <div class="swiper-slide">
+            <div class="card h-100" id="card">
+              <div class="image-container">
+                <img src="https://cdn.shopify.com/s/files/1/0638/8006/9220/files/13_d2e9015c-7850-4593-99a7-227a874364ba_1000x.jpg?v=1711450209" width="303" height="200" class="card-img-top img-1" alt="...">
+                <img src="https://couchly-codezeel.myshopify.com/cdn/shop/files/01_ecfba05f-1669-4844-bc2f-e6cc60248124_1000x1000.jpg?v=1711450209" width="303" height="200" class="card-img-top img-2" alt="...">
+              </div>
+              <div class="card-body">
+                
+                <p class="card-title">Ferm Living Isola Comfortable Storage Table</p>
+                <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<p class="card-text">  €207,95</p>
+
+                <button id="  ">kjjdscjkn</button>
+              </div>
+              
+            </div>
+            
+          </div>
+          <!-- ----------img2---------- -->
+          <div class="swiper-slide">
+            <div class="card h-100" id="card">
+              <div class="image-container">
+                <img src="https://cdn.shopify.com/s/files/1/0638/8006/9220/files/14_1000x.jpg?v=1711450303" width="303" height="200" class="card-img-top img-1" alt="...">
+                <img src="https://cdn.shopify.com/s/files/1/0638/8006/9220/files/01_c510a87e-49e4-4a35-ad71-519b68ccebf0_1000x.jpg?v=1711450303"width="200" height="150" style="width: 200px;" class="card-img-top img-2" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-title"> Ferm Living Catena Sofa Corner Cotton Linen</p>
+               
+              
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <p class="card-text"> €235,95</p>
+              <button id="  ">kjjdscjkn</button>
+            </div>
+            </div>
+          </div>
+          <!-- ---------------img3---------------- -->
+          <div class="swiper-slide">
+            <div class="card h-100" id="card">
+              <div class="image-container">
+                <img src="https://cdn.shopify.com/s/files/1/0638/8006/9220/files/20_985bc9ce-797f-4a01-85c5-f60f1fafa051_1000x.jpg?v=1711450326" width="303" height="200" class="card-img-top img-1" alt="...">
+                <img src="https://cdn.shopify.com/s/files/1/0638/8006/9220/files/01_1000x.jpg?v=1711450326" width="303" height="200" class="card-img-top img-2" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-title"> Ferm Decorate Living Arum Table Lamp</p>
+                
+              
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <p class="card-text">  €349,95</p>
+              <button id="  ">kjjdscjkn</button>
+            </div>
+            </div>
+          </div>
+          <!-- ------------------img4--------------- -->
+          <div class="swiper-slide">
+            <div class="card h-100" id="card">
+              <div class="image-container">
+                <img src="https://cdn.shopify.com/s/files/1/0638/8006/9220/files/1_9f97ad8b-9cb5-4d2e-b980-2a727ecdc3d5_1000x.jpg?v=1711450344" width="303" height="200" class="card-img-top img-1" alt="...">
+                <img src="https://cdn.shopify.com/s/files/1/0638/8006/9220/files/01_ecda3c18-f587-427e-b460-f4e24fe61684_1000x.jpg?v=1711450344" width="303" height="200" class="card-img-top img-2" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-title"> Evans Lichfield Sunningdale Velvet Pillow</p>
+               
+              
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <p class="card-text">   €235,95</p>
+              <button id="  ">kjjdscjkn</button>
+            </div>
+            </div>
+          </div>
+          <!-- ----------------img5------------ -->
+          <div class="swiper-slide">
+            <div class="card h-100" id="card">
+              <div class="image-container">
+                <img src="https://cdn.shopify.com/s/files/1/0638/8006/9220/files/22_bb706b00-9475-4f1b-be35-fbcef84b6ff1_1000x.jpg?v=1711450243"  width="303" height="200" class="card-img-top img-1" alt="...">
+                <img src ="https://cdn.shopify.com/s/files/1/0638/8006/9220/files/01_39ee55cb-2cf3-4a9d-a1e5-8744919c46e0_1000x.jpg?v=1711450243" width="303" height="200" class="card-img-top img-2" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-title"> Ethnicraft Ellipse 3 Seater Lounge Sofa</p>
+              
+              
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <p class="card-text">     €207,95</p>
+              <button id="  ">kjjdscjkn</button>
+            </div>
+            </div>
+      </div>
+      <!-- ------------------img6--------------- -->
+      <div class="swiper-slide">
+        <div class="card h-100" id="card">
+          <div class="image-container">
+            <img src="https://cdn.shopify.com/s/files/1/0638/8006/9220/files/15_6b501d8a-e9b3-4964-8a39-838026722e89_1000x.jpg?v=1711450311"  width="303" height="200" class="card-img-top img-1" alt="...">
+            <img src ="https://cdn.shopify.com/s/files/1/0638/8006/9220/files/01_91a07830-fa0a-42c8-9869-5aaad605d098_1000x.jpg?v=1711450311" width="303" height="200" class="card-img-top img-2" alt="...">
+          </div>
+          <div class="card-body">
+            <p class="card-title"> Elephant Chair, Natural / Vintage Leather Camel</p>
+          
+          
+          <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+          <p class="card-text"> €349,95</p>
+          <button id="  ">kjjdscjkn</button>
+        </div>
+        </div>
+  </div>
+  <!-- ------------------img7-------------- -->
+  <div class="swiper-slide">
+    <div class="card h-100" id="card">
+      <div class="image-container">
+        <img src= "https://cdn.shopify.com/s/files/1/0638/8006/9220/files/01_f91283e9-2e6a-4cee-bde1-d7fbc97485b8_1000x.jpg?v=1711450267" width="303" height="200" class="card-img-top img-1" alt="...">
+        <img src ="https://cdn.shopify.com/s/files/1/0638/8006/9220/files/5_1000x.jpg?v=1711450267" width="303" height="200" class="card-img-top img-2" alt="...">
+      </div>
+      <div class="card-body">
+        <p class="card-title"> Coventry Fabric Sofa Bed Boston Current</p>
+      
+     
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <p class="card-text"> €221,95</p>
+      <button id="  ">kjjdscjkn</button>
+    </div>
+    </div>
+</div>
+<!-- -------------------img8-------------- -->
+<div class="swiper-slide">
+  <div class="card h-100" id="card">
+    <div class="image-container">
+      <img src= "https://cdn.shopify.com/s/files/1/0638/8006/9220/files/12_1000x.jpg?v=1711450228"  width="303" height="200" class="card-img-top img-1" alt="...">
+      <img src ="https://cdn.shopify.com/s/files/1/0638/8006/9220/files/01_1186f13d-6420-4c7c-9d3c-de6fb41f03d8_1000x.jpg?v=1711450228" width="303" height="200" class="card-img-top img-2" alt="...">
+    </div>
+    <div class="card-body">
+      <p class="card-title"> Coventry Fabric Sofa Bed Boston Current</p>
+   
+    
+    <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+    <p class="card-text">€221,95</p>
+    <button id="  ">kjjdscjkn</button>
+  </div>
+  </div>
+</div>
+      <!-- Add Arrows -->
+      
+  </div>
+</div>
 
 
-
-
-<div class="row row-cols-1 row-cols-md-5 g-4 custom-row-width ">
+<!-- <div class="row row-cols-1 row-cols-md-5 g-4 custom-row-width ">
   <div class="slide-container swiper">
     <div class="slide-content">
         <div class="card-wrapper swiper-wrapper">
@@ -693,17 +618,54 @@ Payment Accepted
 </div>
 </div>
 </div>
+</div> -->
+
+
+<!-- ----------------9-------------- -->
+<div id="backgrong-img">
+  <div id="div-left-img1">
+    <div class="card text" id="bg-img1">
+      <img src="https://couchly-codezeel.myshopify.com/cdn/shop/files/sub-banner-1.jpg?v=1711520121" class="card-img" alt="...">
+      <div class="card-img-overlay1">
+        
+        <p class="card-text text-black"> Flat Discount 30%</p>
+        <h5 class="card-title text-black">  Stock Summer<br> Collection
+        </h5><br>
+        <button id="card-button"> Shop Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="div-right-img2-3">
+    <div class="card text" id="bg-img2">
+      <img src="https://couchly-codezeel.myshopify.com/cdn/shop/files/sub-banner-2.jpg?v=1711520121" class="card-img" alt="...">
+      <div class="card-img-overlay2">
+        
+        <p class="card-text text-black">25% Discount</p>
+        <h5 class="card-title text-black">   Sweep Wall Clock<br>  With Metal
+        </h5><br>
+        <button id="card-button"> Shop Now</button>
+      </div>
+    </div>
+
+    <div class="card text" id="bg-img3">
+      <img src="https://couchly-codezeel.myshopify.com/cdn/shop/files/sub-banner-3.jpg?v=1711520121" class="card-img" alt="...">
+      <div class="card-img-overlay3">
+        <p class="card-text text-black">35% Discount</p>
+        
+        <h5 class="card-title text-black">  Comfortable High<br>  Quality Sofa</h5><br>
+        <button id="card-button"> Shop Now</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 
-
-
-
  
-<div id="backgrong-img" style="margin: 0 auto; width: 90%; display: flex; justify-content: space-between; height: 600px; overflow: hidden;">
-  <div id="div-left-img1" style="width: calc(50% - 10px); overflow: hidden;">
-     <div class="card text" id="bg-img1" style="padding: 10px; height: 100%; margin-top: 20px;">
-        <img src="https://couchly-codezeel.myshopify.com/cdn/shop/files/01_ecfba05f-1669-4844-bc2f-e6cc60248124_1000x1000.jpg?v=1711450209" class="card-img" alt="...">
+<!-- <div id="backgrong-img" style="margin-bottom: 30px; width: 100%; display: flex; justify-content: space-between; height: 600px; overflow: hidden;">
+  <div id="div-left-img1" style="width: calc(50% - 10px); height: 100%; overflow: hidden;">
+     <div class="card text" id="bg-img1" style=" height: 100%; margin-top: 20px;">
+        <img src="https://couchly-codezeel.myshopify.com/cdn/shop/files/sub-banner-1.jpg?v=1711520121" class="card-img" alt="...">
         <div class="card-img-overlay">
            <h5 class="card-title text-black">Card title</h5>
            <p class="card-text text-black">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -713,8 +675,8 @@ Payment Accepted
   </div>
 
   <div id="div-right-img2/3" style="width: calc(50% - 10px);height: 600px;  margin-top: 20px; overflow: hidden;" >
-     <div class="card text" id="bg-img2" style="height: 50%; padding: 10px;">
-        <img src="https://couchly-codezeel.myshopify.com/cdn/shop/files/01_ecfba05f-1669-4844-bc2f-e6cc60248124_1000x1000.jpg?v=1711450209" style="width: 100%; height: 100%;" class="card-img" alt="...">
+     <div class="card text" id="bg-img2" style="height: 50%; ">
+        <img src="https://couchly-codezeel.myshopify.com/cdn/shop/files/sub-banner-2.jpg?v=1711520121" style="width: 100%; height: 100%;" class="card-img" alt="...">
         <div class="card-img-overlay">
            <h5 class="card-title text-black">Card title</h5>
            <p class="card-text text-black">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -723,7 +685,7 @@ Payment Accepted
      </div>
 
      <div class="card text" id="bg-img3" style="height: 50%; padding: 10px; margin-top: 20px;">
-        <img src="https://couchly-codezeel.myshopify.com/cdn/shop/files/01_ecfba05f-1669-4844-bc2f-e6cc60248124_1000x1000.jpg?v=1711450209" style="width: 100%; height: 100%;" class="card-img" alt="...">
+        <img src="https://couchly-codezeel.myshopify.com/cdn/shop/files/sub-banner-3.jpg?v=1711520121" style="width: 100%; height: 100%;" class="card-img" alt="...">
         <div class="card-img-overlay">
            <h5 class="card-title text-black">Card title</h5>
            <p class="card-text text-black">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -732,7 +694,7 @@ Payment Accepted
      </div>
   </div>
 </div>
-
+ -->
 
 
 
@@ -770,7 +732,7 @@ Payment Accepted
           <div class="card swiper-slide mb-3">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="..." class="img-fluid rounded-start" alt="...">
+                <img src="https://couchly-codezeel.myshopify.com/cdn/shop/files/8_1000x1000.jpg?v=1711450181" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -784,7 +746,7 @@ Payment Accepted
           <div class="card swiper-slide mb-3">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="..." class="img-fluid rounded-start" alt="...">
+                <img src="https://couchly-codezeel.myshopify.com/cdn/shop/files/01_ca34d2ad-2850-491d-9bee-3cfecaf576ab_1000x1000.jpg?v=1711450259" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -804,7 +766,7 @@ Payment Accepted
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">kdcdsncThis is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  <p class="card-text"><small class="text-body-secondary">e, dssa cascklwasx</small></p>
                 </div>
               </div>
             </div>
@@ -862,29 +824,52 @@ Payment Accepted
       });
     </script>
 
+<script src="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+
+<!-- JavaScript -->
+  <!--Uncomment this line-->
+<script src=""></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new Swiper('.swiper-container', {
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+      slidesPerView: 5,
+      spaceBetween: 30,
+      loop: true,
+      breakpoints: {
+          320: {
+              slidesPerView: 2,
+              spaceBetween: 10
+          },
+          640: {
+              slidesPerView: 3,
+              spaceBetween: 25
+          },
+          1000: {
+              slidesPerView: 4,
+              spaceBetween: 30
+          },
+          1024: {
+              slidesPerView: 5,
+              spaceBetween: 30
+          }
+      }
+  });
+});
+
+</script>
 
 
 
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.6.2/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
 
 
